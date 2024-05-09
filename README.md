@@ -82,7 +82,7 @@ In this lab, I am sharing how to build a simple adaptive card with choiceset con
     
     <img width="391" alt="image" src="https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/a832d868-3fa0-44be-b498-65666b696e64">
 
-14. Add a new node to ask with an adaptive card. Copy the following formula into the "edit formula" window. Two output parameters shuould be created autoamtically. One is actionSubmitId, the other one is selectedaccoun. Both are type string.
+14. Add a new node to ask with an adaptive card. Copy the following formula into the "edit formula" window. Two output parameters shuould be created autoamtically. One is actionSubmitId, the other one is selectedaccount. Both are type string.
 
      <img width="161" alt="image" src="https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/0d40e440-9297-4efd-a660-6c67bbc99180">
 
