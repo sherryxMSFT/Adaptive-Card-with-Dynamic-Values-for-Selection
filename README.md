@@ -1,4 +1,4 @@
-# Adaptive-Card-with-Dynamic-Values-for-Selection
+# Adaptive Card with Dynamic Values for Selection
 This repository shows step-by-step instructions on how to return a list of values dynamically using Power Automate Flow, and display them as a choiceset on an adaptive card in Copilot Studio for users to pick from. 
 
 Imagine you are chatting with a copilot on a hopistal's website, you want to book an doctor appoinment. Copilot retrieves a list of the doctor's availability slots for the next 7 days in the format of "05/09/2024 9-10AM". Copilot now is waiting for you to enter which slot would you like. Would you like to type the text or pick from a list with one click? I would always prefer the latter. 
