@@ -9,14 +9,17 @@ In this lab, I am sharing how to build a simple adaptive card with choiceset con
 
 1. Prepare the records in Dataverse Account Table. Enter records as follow:
 
-  <img width="584" alt="image" src="https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/ebfa1be7-f172-40bc-a6f6-02dbe183343b">
+    <img width="584" alt="image" src="https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/ebfa1be7-f172-40bc-a6f6-02dbe183343b">
 
 
-2. Create a topic in Copilot Studio with triggers, rename the topic to be "Account Search with Adaptive Card", trigger phrases are "I am looking for a customer.", "I am looking for an account", "search account", "search customer". 
+2. Create a topic in Copilot Studio with triggers, rename the topic to be "Account Search with Adaptive Card", trigger phrases are "I am looking for a customer.", "I am looking for an account", "search account", "search customer".
+   
    <img width="626" alt="image" src="https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/10fb9860-9849-414f-8978-7066847ec01b">
+   
 3. Add a Question node asking "What's the name of the customer you're looking for?" and save the user's response into a variable called "organization"
 
    <img width="164" alt="image" src="https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/8494b52e-82f7-4938-afc4-ce5072d1b2d1">
+   
 4. Add a node to call an action to create a flow. This will take you to the Power Automate Flow UI
    <img width="400" alt="image" src="https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/7c3bae02-2dcf-4803-a669-2fed4c8a6a67">
 5. Rename the flow title to "Search Account for ChoiceSet". Add an input parameter named "Organization"
@@ -25,6 +28,7 @@ In this lab, I am sharing how to build a simple adaptive card with choiceset con
 ')", ![image](https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/b0b96d64-ecb0-4e41-bce3-1617b81e74d0) is selected from the dynamic content.
 
    <img width="314" alt="image" src="https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/9f6089a6-d3f5-4bbd-91b9-c7121c948487">
+   
 7. Add an action to trigger Parse JSON action. Enter ![image](https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/2fedf006-8111-452f-9104-8de910bda599) in the Content field. It is selected from the dynamic content under list rows section. Enter the code below in the Schema field.
 
    ![image](https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/a7b08118-e9fc-4d01-bb58-78cbd3709dfd)
@@ -52,7 +56,7 @@ In this lab, I am sharing how to build a simple adaptive card with choiceset con
                 }
 8. Add an action to trigger a select under Data Operation connector. Enter ![image](https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/35f7b1db-de68-43ec-a6da-f5bf0b8dcc6b) in the From field which could be selected from dynanmic content under Parse JSON section. Map field is as below.
    
-   ![image](https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/a831e3a3-527a-44ca-81e0-f6ad2274f6ac)
+    ![image](https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/a831e3a3-527a-44ca-81e0-f6ad2274f6ac)
 
 9. Add an action to trigger a compose under Data Operation connector. Enter ![image](https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/3941cdc0-3bf9-4fb7-b602-1832546c53f0) in the Inputs field which could be selected from dynamic content under select section.
 
@@ -111,16 +115,16 @@ In this lab, I am sharing how to build a simple adaptive card with choiceset con
 			    ]
 			    }
     
-16. Add a new node display a message dispalying "You selected <img width="100" alt="image" src="https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/e8ecc1e4-54fd-42bf-9835-d23ac97c5c37">" 
+15. Add a new node display a message dispalying "You selected <img width="100" alt="image" src="https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/e8ecc1e4-54fd-42bf-9835-d23ac97c5c37">" 
 
 	 <img width="164" alt="image" src="https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/5775e69a-125e-4cda-b5cc-bf646cab74ec">
 
-17. Time to TEST!! Type Search Account to trigger the topic, and then type contoso, expect copilot to present you with a card of options to choose from. Pretty neat! 
+16. Time to TEST!! Type Search Account to trigger the topic, and then type contoso, expect copilot to present you with a card of options to choose from. Pretty neat! 
 
     <img width="184" alt="image" src="https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/94cbf04c-82c1-43b4-a43d-b372552443b4">
 
-18. Congratulations, you have finished the lab. If you need source code for reference, you can download the solution file attached and import to any of your Power Platform environment.
-19. Drop me an email if you need any help at sherry.qian.xu@gmail.com. Thank you :)
+17. Congratulations, you have finished the lab. If you need source code for reference, you can download the solution file attached and import to any of your Power Platform environment.
+18. Drop me an email if you need any help at sherry.qian.xu@gmail.com. Thank you :)
 
 
    
