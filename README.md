@@ -5,7 +5,7 @@ Imagine you are chatting with a copilot on a hopistal's website, you want to boo
 
 One best practice to follow in copilot development is that we don't want the users to type too much. They could make serious typos that derail the whole conversation or simply quit in the middle of it because it is too much to type. 
 
-In this lab, I am sharing how to build a simple adaptive card with choiceset control to display a list of dynamic values for selection. Here we go! Dynamic means the values are different based on different scenarios. It is not a pre-defined static list.
+In this lab, I am sharing how to build a simple adaptive card with choiceset control to display a list of dynamic values for selection. Dynamic means the values are different based on different scenarios. It is not a pre-defined static list. Here we go! 
 
 1. Prepare the records in Dataverse Account Table. Enter records as follow:
 
