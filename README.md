@@ -74,7 +74,7 @@ Here we go!
   "accountjson": "{\"items\": [{\"title\":\"Fabrikam Real Estate - New York\",\"value\":\"FK0001\"},{\"title\":\"Fabrikam LLC - Queens\",\"value\":\"FK0002\"},{\"title\":\"Fabrikam Auto - Bellevue\",\"value\":\"FK0003\"}]}"
     }
 
-12. Go back to the copilot studio and pick Search Account for ChoiceSet flow. Input should be automatically set to the organization variable, save the output to AccountJSON vairable of type string.
+12. Go back to the copilot studio and pick Search Account for ChoiceSet flow. Input should be automatically set to the organization variable, save the output to AccountJSON variable of type string.
 
     <img width="165" alt="image" src="https://github.com/sherryxMSFT/Adaptive-Card-with-Dynamic-Values-for-Selection/assets/133151558/64bfc984-3f34-49fc-80d6-6b2fca570562">
 
